@@ -1,5 +1,7 @@
 module github.com/slok/grafterm
 
+go 1.14
+
 require (
 	github.com/DATA-DOG/go-sqlmock v1.3.3 // indirect
 	github.com/JensRantil/graphite-client v0.0.0-20151206234601-d93bf4b72f5a
