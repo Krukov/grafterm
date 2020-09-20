@@ -81,7 +81,7 @@ func (t *termDashboard) LoadDashboard(ctx context.Context, gr *graftermgrid.Grid
 
 	go func() {
 		quitter := func(k *terminalapi.Keyboard) {
-			if k.Key == 'q' || k.Key == 'Q' || k.Key == keyboard.KeyEsc {
+			if k.Key == 'q' || k.Key == 'Q' || k.Key == keyboard.KeyEsc || k.Key == keyboard.KeyCtrlC {
 				t.cancel()
 			}
 		}
